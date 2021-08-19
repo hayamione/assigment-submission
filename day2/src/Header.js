@@ -51,7 +51,7 @@ function Header(){
             {
                 services.map((service,index)=>(  
 
-                <Service title={service.title} sbtitle={service.subtitle} desc={service.desc} image={service.image} />       
+                <Service key={index} title={service.title} sbtitle={service.subtitle} desc={service.desc} image={service.image} />       
                             )
                             )
             }  
