@@ -48,6 +48,15 @@
     background: #ededed;
     border-radius: 10px;
 }
+@media (max-width:992px){
+  .card {
+    width:100% !important;
+  }
+  .card-image {
+    height:auto !important;
+  }
+}
+
 .card {
   height:auto;
   width:30%;
