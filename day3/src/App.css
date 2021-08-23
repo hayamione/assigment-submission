@@ -110,3 +110,9 @@ p, h4 {
 .rating>div {
   margin-right : 20px;
 }
+
+footer {
+  text-align:right;
+  padding-right:50px;
+  font-weight: 500;
+}
