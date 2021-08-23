@@ -1,32 +1,32 @@
+import {useState, useEffect} from 'react';
 import './App.css';
-import {useState,useEffect} from 'react';
-
 
 function App() {
 
   
 let [movieinfo,setMovieinfo]=useState(null);
-let [title,setTitle]=useState("harry potter and the order of the phoenix");
+let [title,setTitle]=useState("harry potter and the chamber of secrets");
 
 useEffect(()=>{
 
-  getmoviedata(title);  
+  getmoviedata();
   
 },[])
 
 
-function readTitle(value){
+function readTitle(value) {
     setTitle(value);
+    // console.log(value);
 }
 
-function getmoviedata(){
-  let url = `https://omdbapi.com/?t=${title}&apikey=4926feba`;
+function getmoviedata() {
+  let url = `https://omdbapi.com/?t=${title}&plot=full&apikey=4926feba`;
 
   fetch(url)
   .then((response)=>response.json())
   .then((movie)=>{
-    console.log(movie);
     setMovieinfo(movie);
+    console.log(movie);
 })
 .catch((err)=>{
   console.log(err);
@@ -39,8 +39,8 @@ function getmoviedata(){
         <div className="padd">
           <h1>Movie Search App With React JS</h1>
           <div className="search">
-            <input type="text" placeholder="Enter Movie Name" onChange={(event)=>{readTitle(event.target.value)}} className="inp"></input>
-            <button Onclick={getmoviedata} className="btn">Search</button>
+            <input type="text" placeholder="Enter Movie Name" onChange={(event)=>{readTitle(event.target.value)}} className="inp"/>
+            <button type="button" onClick={getmoviedata} className="btn">Search</button>
           </div>
 
         {
