@@ -92,6 +92,7 @@ function getmoviedata() {
 
       }
         </div>
+        <footer><strong>Developed and Designed By : </strong>Haya Zubair</footer>
       </div>
       {/*<header className="App-header">
          <img src={logo} className="App-logo" alt="logo" />
