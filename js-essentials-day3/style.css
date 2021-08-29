@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'harrypotterfont';
+    src: url('HARRYP__.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    text-align: center;
+    font-family: 'harrypotterfont';
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.main-h {
+    font-size: 70px;
+    margin: 5px;
+}
+
+.crest-img {
+    width: 150px;
+}
+
+.card {
+    background: #ededed;
+    width: 500px;
+    position: absolute;
+    left: 16%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.first-section {
+    display: flex;
+}
+
+.score {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.jumbled {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+p#j-word,
+p#score {
+    margin: 5px;
+    font-weight: 600;
+}
+
+p#score {
+    margin-top: -20px;
+}
+
+.user-input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inp {
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-indent: 20px;
+    outline: none;
+}
+
+.btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #239cf3;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@media (min-width:992px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media (max-width:992px) {}

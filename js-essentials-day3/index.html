@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jumbled Words Game Using JS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="hogwarts-crest.png" />
+</head>
+
+<body>
+    <div class="container">
+        <img src="hogwarts-crest.png" class="crest-img">
+        <h1 class="main-h">Harry Potter Theme Word Guessing Game</h1>
+        <div class="card">
+            <div class="first-section">
+                <div class="jumbled">
+                    <p id="j-word"></p>
+                </div>
+                <div class="score">
+                    <p id="score">0</p>
+                </div>
+
+            </div>
+            <div class="user-input">
+                <input type="text" class="inp" id="inp" title="Write Correct Word" placeholder="Write Correct Word For The Jumbled Words Above" />
+                <button class="btn" onclick="checkAnswer()">Submit</button>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
